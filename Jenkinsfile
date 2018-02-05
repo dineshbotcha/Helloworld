@@ -1,5 +1,4 @@
 pipeline {
-    agent any
     agent { docker 'ruby' }
     stages {
         stage('Example') {
