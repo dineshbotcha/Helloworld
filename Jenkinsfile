@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker 'ruby' }
+    agent any
     stages {
         stage('Example') {
             steps {
@@ -8,7 +8,13 @@ pipeline {
         }
 	 stage('build'){
 	    steps{
-                sh 'ruby --version'
+                sh 'mkdir dinesh'
+		sh 'cd dinesh'
+		sh 'echo "hi this is dinesh" > /var/lib/jenkins/workspace/1stfile'
+		sh 'echo "Creating 2nd file" > /var/lib/jenkins/workspace/2ndfile'
+		sh 'echo "creating 3rd file" > /var/lib/jenkins/workspace/3rdfile'
+		sh 'echo "The no of files to be dispalyed"'
+		sh 'ls'
 	
     }
 }
