@@ -15,7 +15,8 @@ pipeline {
 		sh 'echo "creating 3rd file" > /var/lib/jenkins/workspace/pipeline/dinesh/3rdfile'
      
 		sh 'echo "The no of files to be dispalyed"'
-		sh 'cd /var/lib/jenkins/workspace/pipeline/dinesh/ | ls -ll'
+               
+		sh 'cd /var/lib/jenkins/workspace/pipeline/dinesh/* | ls -ll'
 	
     }
 }
