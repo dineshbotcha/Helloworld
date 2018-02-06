@@ -16,7 +16,7 @@ pipeline {
      
 		sh 'echo "The no of files to be dispalyed"'
                
-		sh 'cd /var/lib/jenkins/workspace/pipeline/dinesh/* | ls -ll'
+		sh 'ls -ll dinesh'
 	
     }
 }
